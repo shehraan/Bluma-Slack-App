@@ -1,0 +1,18 @@
+---
+description: Video generation and processing workflows
+globs: 
+alwaysApply: false
+---
+# Video Processing Guidelines
+
+## Video Generation
+- Set reasonable timeouts for video generation (5-10 minutes)
+- Implement progress tracking for long-running tasks
+- Compress videos for Slack compatibility
+- Generate thumbnails for preview
+
+## File Management
+- Use temporary storage for generated videos
+- Implement cleanup for old files
+- Store metadata about generated content
+- Handle file size limits for Slack uploads

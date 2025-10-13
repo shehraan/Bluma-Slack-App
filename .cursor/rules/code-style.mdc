@@ -1,0 +1,53 @@
+---
+description: Code style and language guidelines
+globs: 
+alwaysApply: false
+---
+# Code Style Guidelines
+
+## Language and Communication
+- Only have 1 markdown file called "README.md"
+- Do not use emojis in code, comments, or documentation
+- Use professional, technical language only
+- Avoid casual or informal expressions
+- Write clear, concise, and professional text
+
+## Code Comments
+- Use standard English without decorative elements
+- Focus on technical accuracy and clarity
+- Avoid unnecessary embellishments or casual language
+- Keep comments professional and informative
+
+## Documentation
+- Write in a formal, technical style
+- Use proper grammar and punctuation
+- Avoid slang, abbreviations, or casual expressions
+- Maintain consistency in tone and style
+
+## Examples
+
+### Good Examples
+```python
+# Process user authentication request
+# Handle video generation timeout
+# Initialize OpenAI client with API key
+```
+
+### Bad Examples
+```python
+# 🚀 Process user authentication request
+# Handle video generation timeout! 
+# Initialize OpenAI client with API key ✨
+```
+
+## Error Messages
+- Use clear, professional language
+- Avoid casual expressions or slang
+- Provide specific, actionable information
+- Maintain consistent tone across all messages
+
+## Variable Names
+- Use descriptive, professional names
+- Avoid abbreviations unless standard
+- Use camelCase or snake_case consistently
+- Choose names that clearly indicate purpose

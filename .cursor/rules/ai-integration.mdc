@@ -1,0 +1,18 @@
+---
+description: AI model integration best practices
+globs: 
+alwaysApply: false
+---
+# AI Integration Guidelines
+
+## OpenAI API Usage
+- Always validate prompts before sending to AI models
+- Implement retry logic with exponential backoff
+- Monitor token usage and costs
+- Handle model unavailability gracefully
+
+## Content Generation
+- Sanitize user inputs before processing
+- Implement content filtering for inappropriate requests
+- Cache common responses to reduce API calls
+- Provide fallback options when primary models fail

@@ -1,0 +1,55 @@
+---
+description: Slack bot development guidelines for Bluma project
+globs: 
+alwaysApply: false
+---
+# Slack Bot Development Guidelines
+
+## Security & Authentication
+- Always verify Slack request signatures using signing secret
+- Store all tokens securely in environment variables (BotToken, SigningSecret, ClientSecret)
+- Implement proper error handling for API failures
+- Never log sensitive user data or API responses
+- Use ephemeral responses for error messages to avoid channel spam
+
+## Bot Response Patterns
+- Acknowledge slash commands immediately with `ack()`
+- Respond within 3 seconds for acknowledgment
+- Use Slack's block kit for rich formatting
+- Include loading indicators for long-running tasks (video generation)
+- Provide clear error messages with next steps
+- Use `response_type: "in_channel"` for successful results
+- Use `response_type: "ephemeral"` for errors and help messages
+
+## Command Handling
+- Parse command text carefully and validate input format
+- Provide clear usage examples in error messages
+- Handle edge cases gracefully (empty input, malformed commands)
+- Log command usage for monitoring and debugging
+
+## Video Generation Workflow
+- Send immediate acknowledgment of video generation request
+- Provide progress updates during long-running operations
+- Send video idea first, then generate actual video
+- Include both video concept and download link in final response
+- Handle timeouts gracefully (5-minute limit)
+
+## Rate Limiting & Performance
+- Implement exponential backoff for API calls
+- Monitor API usage and costs (20 requests/day limit)
+- Queue video generation requests if needed
+- Use async processing for long-running tasks
+
+## Error Handling
+- Catch specific exceptions (VideoGenerationError, ValueError)
+- Provide user-friendly error messages in Slack
+- Log detailed errors for debugging
+- Implement fallback options when primary models fail
+- Never expose internal error details to users
+
+## Code Structure
+- Use type hints for better code maintainability
+- Separate concerns (parsing, generation, response formatting)
+- Create custom exception classes for specific error types
+- Follow Python naming conventions (snake_case)
+- Keep functions focused and testable

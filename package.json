@@ -1,0 +1,15 @@
+{
+  "name": "bluma-slack-bot",
+  "version": "1.0.0",
+  "description": "Bluma Slack Bot for video generation",
+  "engines": {
+    "node": "22.x"
+  },
+    "dependencies": {
+      "@slack/bolt": "^3.17.1",
+      "openai": "^4.77.3",
+      "@vercel/blob": "latest",
+      "@upstash/qstash": "^2.7.0"
+    }
+}
+
