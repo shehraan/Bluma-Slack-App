@@ -1,6 +1,6 @@
 # Bluma Slack Bot
 
-A Slack bot that generates viral video content using OpenAI's GPT-4 and Sora-2 models.
+Note: I made this bot in 24 hours as my proof-of-work while applying for a SWE role @ Bluma
 
 ## Features
 
