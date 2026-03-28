@@ -1,6 +1,6 @@
 # Bluma Slack Bot
 
-Note: I made this bot in 24 hours as my proof-of-work while applying for a SWE role @ Bluma
+Note: I made this bot in 24 hours as my proof-of-work
 
 ## Features
 
