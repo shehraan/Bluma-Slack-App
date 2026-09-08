@@ -1,6 +1,6 @@
 # Bluma Slack Bot
 
-Note: I made this bot in 24 hours as my proof-of-work
+Note: I made this bot in 24 hours as a POC project
 
 ## Features
 
